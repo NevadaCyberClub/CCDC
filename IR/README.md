@@ -28,3 +28,6 @@ https://github.com/StamusNetworks/SELKS
 https://github.com/lawrencesystems/graylog
 https://github.com/spaceraccoon/manuka
 https://benheater.com/proxmox-opencti-in-linux-container-lxc/
+https://github.com/weslambert/velociraptor-docker
+https://github.com/wazuh/wazuh-docker
+
