@@ -9,15 +9,11 @@ if (-not (Test-Path "C:\tmp")) {
     New-Item -ItemType Directory -Path "C:\tmp"
 }
 
-# Clone the sysmon-config repository if it doesn't already exist
 if (-not (Test-Path $ConfigRepoPath)) {
     Write-Host "Cloning sysmon-config repository..."
-    git clone $ConfigRepoUrl $ConfigRepoPath
+    Invoke-WebRequest $ConfigRepoUrl -OutFile $ConfigRepoPath
 } else {
-    Write-Host "sysmon-config repository already exists. Pulling latest changes..."
-    Push-Location $ConfigRepoPath
-    git pull
-    Pop-Location
+    Write-Host "sysmon-config repository already exists"
 }
 
 # Download Sysmon if it is not already downloaded
