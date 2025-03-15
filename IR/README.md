@@ -22,6 +22,7 @@ https://www.ossec.net/docs/
 
 ## soc rules
 https://abuse.ch
+https://github.com/jatrost/awesome-detection-rules.git
 
 ## Other tools if resources are available
 https://github.com/StamusNetworks/SELKS
