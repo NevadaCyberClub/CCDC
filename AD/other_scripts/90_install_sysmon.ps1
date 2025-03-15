@@ -31,7 +31,7 @@ if (-not (Test-Path "$SysmonExtractPath\Sysmon64.exe")) {
 $SysmonExe = "$SysmonExtractPath\Sysmon64.exe"
 # The config file name might be "sysmonconfig-export.xml" or "sysmonconfig.xml" depending on your preference.
 # Adjust the file name if necessary.
-$ConfigFile = "$ConfigRepoPath\sysmonconfig-export.xml"
+$ConfigFile = "$ConfigRepoPath"
 
 # Check if the config file exists
 if (-not (Test-Path $ConfigFile)) {
