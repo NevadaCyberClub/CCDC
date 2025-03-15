@@ -2,7 +2,7 @@
 $SysmonDownloadUrl = "https://download.sysinternals.com/files/Sysmon.zip"
 $SysmonZipPath     = "C:\tmp\Sysmon.zip"
 $SysmonExtractPath = "C:\tmp\Sysmon"
-$ConfigRepoUrl     = "https://github.com/SwiftOnSecurity/sysmon-config.git"
+$ConfigRepoUrl     = "https://raw.githubusercontent.com/SwiftOnSecurity/sysmon-config/refs/heads/master/sysmonconfig-export.xml"
 $ConfigRepoPath    = "C:\tmp\sysmon-config"
 
 if (-not (Test-Path "C:\tmp")) {
