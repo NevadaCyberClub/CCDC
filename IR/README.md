@@ -7,6 +7,7 @@ https://github.com/PlumHound/PlumHound
 https://github.com/jtesta/ssh-audit/releases/download/v3.3.0/ssh-audit-3.3.0.tar.gz
 https://github.com/ansible-lockdown
 https://www.zdnet.com/article/how-to-install-and-configure-fail2ban-for-even-more-ssh-security/
+https://github.com/kunai-project/kunai
 
 ## Kubernetes 
 https://github.com/aquasecurity/kube-bench
@@ -22,6 +23,11 @@ https://www.ossec.net/docs/
 
 ## soc rules
 https://abuse.ch
+https://github.com/jatrost/awesome-detection-rules.git
+
+## Wazuh
+https://github.com/zakkg3/wazuh-agent-container
+https://github.com/autonubil/go-wazuh
 
 ## Other tools if resources are available
 https://github.com/StamusNetworks/SELKS
