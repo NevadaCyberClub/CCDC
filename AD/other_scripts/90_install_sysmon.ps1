@@ -9,15 +9,11 @@ if (-not (Test-Path "C:\tmp")) {
     New-Item -ItemType Directory -Path "C:\tmp"
 }
 
-# Clone the sysmon-config repository if it doesn't already exist
 if (-not (Test-Path $ConfigRepoPath)) {
     Write-Host "Cloning sysmon-config repository..."
-    git clone $ConfigRepoUrl $ConfigRepoPath
+    Invoke-WebRequest $ConfigRepoUrl -OutFile $ConfigRepoPath
 } else {
-    Write-Host "sysmon-config repository already exists. Pulling latest changes..."
-    Push-Location $ConfigRepoPath
-    git pull
-    Pop-Location
+    Write-Host "sysmon-config repository already exists"
 }
 
 # Download Sysmon if it is not already downloaded
@@ -35,7 +31,7 @@ if (-not (Test-Path "$SysmonExtractPath\Sysmon64.exe")) {
 $SysmonExe = "$SysmonExtractPath\Sysmon64.exe"
 # The config file name might be "sysmonconfig-export.xml" or "sysmonconfig.xml" depending on your preference.
 # Adjust the file name if necessary.
-$ConfigFile = "$ConfigRepoPath\sysmonconfig-export.xml"
+$ConfigFile = "$ConfigRepoPath"
 
 # Check if the config file exists
 if (-not (Test-Path $ConfigFile)) {
