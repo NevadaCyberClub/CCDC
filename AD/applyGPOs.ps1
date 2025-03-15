@@ -6,11 +6,11 @@ if (-not (Test-Path "C:\tmp")) {
 }
 
 if (-not (Test-Path "C:\tmp\gpos.zip")) {
-    Invoke-WebRequest -Uri "https://github.com/NevadaCyberClub/CCDC/blob/master/AD/windows/gpos.zip" -OutFile "C:\tmp\gpos.zip"
+    Invoke-WebRequest -Uri "https://github.com/NevadaCyberClub/CCDC/raw/refs/heads/master/AD/windows/gpos.zip" -OutFile "C:\tmp\gpos.zip"
 }
 
 if (-not (Test-Path "C:\tmp\LGPO.exe")) {
-    Invoke-WebRequest -Uri "https://github.com/NevadaCyberClub/CCDC/blob/master/AD/windows/installers/LGPO.exe" -OutFile "C:\tmp\LGPO.exe"
+    Invoke-WebRequest -Uri "https://github.com/NevadaCyberClub/CCDC/raw/refs/heads/master/AD/windows/installers/LGPO.exe" -OutFile "C:\tmp\LGPO.exe"
 }
 
 # Unzip GPOs
